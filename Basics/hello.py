@@ -22,3 +22,15 @@ print(is_gym_done)
 name = input("Enter your name: ")
 
 print(name)
+#Addition program 
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+sum = a + b
+
+print(sum)
+
+#square of number
+num = int(input("enter a number\n"))
+Square = num * num 
+print(f"Square of number is: {Square}")
