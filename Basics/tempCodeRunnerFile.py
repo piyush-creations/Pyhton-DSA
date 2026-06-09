@@ -1,10 +1,6 @@
-marks = int(input())
-
-if marks >= 90:
-    print("A")
-elif marks >= 75:
-    print("B")
-elif marks >= 50:
-    print("C")
-else:
-    print("Fail")
+n = int(input("Enter number:"))
+count = 0
+while n>0:
+    n = n//10
+    count += 1
+print(count)
