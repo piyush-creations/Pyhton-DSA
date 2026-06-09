@@ -1,6 +1,11 @@
-n = int(input("Enter number:"))
-count = 0
-while n>0:
-    n = n//10
-    count += 1
-print(count)
+num = int(input("Enter a number: "))
+original = num 
+reverse = 0
+while(num > 0):
+    digit = num % 10
+    reverse = reverse * 10 + digit
+    num = num // 10
+if(reverse ==original):
+    print("palindrome number")
+else:
+    print("not a palindrome number")
