@@ -30,3 +30,13 @@ def count_digits(n):
     return count
 
 print(count_digits(12345))
+
+#prime number or not 
+def is_prime(num):
+    if num <=1:
+        return False
+    for i in range(2,num):
+        if num % i ==0:
+            print("prime number")
+num = int(input("enter the number"))       
+print(is_prime(num))
