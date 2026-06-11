@@ -37,6 +37,7 @@ def is_prime(num):
         return False
     for i in range(2,num):
         if num % i ==0:
-            print("prime number")
+            return False
+    return True
 num = int(input("enter the number"))       
 print(is_prime(num))

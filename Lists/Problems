@@ -1,0 +1,46 @@
+#sum of elememnts
+def sum_(a):
+    sum = 0
+    for i in a:
+        sum +=i
+    return sum
+
+#find largest element
+def is_largest(li):
+    max_=li[0]
+    for i in li:
+        if i > max_:
+            max_ = i
+    return max_
+print(is_largest([1,78,90,100,34,55]))
+print(sum_([1,78,90,100,34,55]))
+
+#search an element
+def search(nums, n):
+    for i in range(len(nums)):
+        if nums[i] == n:
+            print(f"element found at index {i}")
+            return
+    print("element not found")
+
+n = int(input("enter the value you want to search: "))
+nums = [1,2,3,4,5,6,7,8,9,0]
+search(nums, n)
+
+#average of list
+def average(numbers):
+    total = 0
+    for i in numbers:
+        total += i
+    if len(numbers) == 0:
+        return 0
+    return total / len(numbers)
+
+print(average([1, 2, 3, 4, 5]))
+
+#print all no. greater than 10 
+def printz(Lists):
+    for i in Lists:
+        if i > 10:
+            print(i)
+print(printz([10, 23, 4, 56, 2, 0]))
