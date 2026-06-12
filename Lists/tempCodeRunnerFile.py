@@ -1,10 +1,7 @@
-#append at the end
-nums = [1, 2, 3]
-nums.append(4)
-print(nums)
-nums.pop()
-print(nums)
-nums.insert(0,100)#two args->index and value
-print(nums)
-nums.remove(100)
-print(nums)
+def rev_array(nums):
+    reverse = []
+    for i in range (len(nums)):
+        reverse.insert(0, nums[i])
+    print(reverse)
+    
+rev_array([1,2,3,4,5])
