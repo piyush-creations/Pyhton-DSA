@@ -24,3 +24,20 @@ def rev_array(nums):
     print(reverse)
     
 rev_array([1,2,3,4,5])
+
+#sort the array
+#basic
+def sort_array(nums):
+    nums.sort()
+    print(nums)
+    
+def sort_array(nums):
+    sorted_nums = nums.copy()
+    for i in range(len(sorted_nums)):
+        for j in range(i + 1, len(sorted_nums)):
+            if sorted_nums[j] < sorted_nums[i]:
+                sorted_nums[i], sorted_nums[j] = sorted_nums[j], sorted_nums[i]
+    print(sorted_nums)
+    
+sort_array([10,70,23,1,2,5,90,100])
+

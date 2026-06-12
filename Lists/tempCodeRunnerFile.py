@@ -1,7 +1,5 @@
-def rev_array(nums):
-    reverse = []
-    for i in range (len(nums)):
-        reverse.insert(0, nums[i])
-    print(reverse)
+def sort_array(nums):
+    nums.sort()
+    print(nums)
     
-rev_array([1,2,3,4,5])
+sort_array([10,70,23,1,2,5,90,100])
